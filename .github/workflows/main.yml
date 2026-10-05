@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Unzip and Build Android APK
 
 on:
   push:
@@ -12,6 +12,11 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+
+    # خطوة فك الضغط عن جميع الملفات المضغوطة في المستودع
+    - name: Extract ZIP files
+      run: |
+        unzip -o "*.zip" -d . || true
 
     - name: Set up JDK 17
       uses: actions/setup-java@v3

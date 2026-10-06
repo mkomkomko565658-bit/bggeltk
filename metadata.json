@@ -1,0 +1,8 @@
+{
+  "name": "بقالتك",
+  "description": "تطبيق بقالتك لمحاسبة الديون والمبيعات والعملاء وإدارة الحسابات",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
